@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shubh Deepavali — Festival of Lights</title>
+  <meta name="description" content="Wishing you a sparkling Diwali filled with lights, love and joy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Fireworks + sky layers -->
+  <canvas id="fireworks" aria-hidden="true"></canvas>
+  <div id="flying-diyas" aria-hidden="true"></div>
+  <div id="sparkles" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-brand">
+      <img src="logo.png" alt="Powertech Consultance logo" class="nav-logo" />
+      <span>Powertech <em>Consultance</em></span>
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#diyas">Diyas</a>
+      <a href="#wishes">Wishes</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="home">
+    <img src="logo.png" alt="Powertech Consultance" class="hero-logo reveal" />
+    <p class="hero-eyebrow reveal">Powertech Consultance presents</p>
+    <h1 class="hero-title reveal">Shubh <span class="gradient-text">Deepavali</span></h1>
+    <p class="hero-sub reveal">May your life sparkle with joy, your home glow with love,<br />and every moment shine like a diya in the night.</p>
+    <button id="launch-btn" class="btn reveal">✦ Launch Fireworks</button>
+    <p class="hero-hint reveal">— or click anywhere in the sky —</p>
+  </header>
+
+  <!-- Diyas showcase -->
+  <section class="diyas-section" id="diyas">
+    <div class="rangoli" aria-hidden="true"></div>
+    <h2 class="section-title reveal">Rows of <span class="gradient-text">Glowing Diyas</span></h2>
+    <p class="section-sub reveal">Each diya carries a wish — light up yours tonight.</p>
+    <div class="diyas-row" id="diyas-row"></div>
+  </section>
+
+  <!-- Wishes card -->
+  <section class="wishes-section" id="wishes">
+    <div class="wish-card reveal">
+      <div class="wish-card-inner">
+        <h2>Wishes for You</h2>
+        <ul>
+          <li>May Lakshmi bless your home with abundance and prosperity.</li>
+          <li>May the light of diyas guide you through every darkness.</li>
+          <li>May sweets, laughter and togetherness fill your celebrations.</li>
+          <li>Happy Diwali — shine bright, always.</li>
+        </ul>
+        <div class="mini-diya" aria-hidden="true"><span class="flame"></span><span class="bowl"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Powertech Consultance — Made with light, love &amp; fireworks. Happy Diwali!</p>
+  </footer>
+
+  <script src="fireworks.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
